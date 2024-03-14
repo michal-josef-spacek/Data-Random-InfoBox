@@ -22,12 +22,16 @@ META.yml
 README
 t/Data-Random-InfoBox-Address/01-use.t
 t/Data-Random-InfoBox-Address/02-version.t
+t/Data-Random-InfoBox-Address/03-new.t
 t/Data-Random-InfoBox-Company/01-use.t
 t/Data-Random-InfoBox-Company/02-version.t
+t/Data-Random-InfoBox-Company/03-new.t
 t/Data-Random-InfoBox-Person/01-use.t
 t/Data-Random-InfoBox-Person/02-version.t
+t/Data-Random-InfoBox-Person/03-new.t
 t/Data-Random-InfoBox/01-use.t
 t/Data-Random-InfoBox/02-version.t
+t/Data-Random-InfoBox/03-new.t
 xt/Data-Random-InfoBox-Address/01-pod_coverage.t
 xt/Data-Random-InfoBox-Address/02-pod.t
 xt/Data-Random-InfoBox-Company/01-pod_coverage.t
