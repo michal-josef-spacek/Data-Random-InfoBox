@@ -31,14 +31,14 @@ sub random {
 		),
 		Data::Random::InfoBox::Address->new->random,
 		Data::InfoBox::Item->new(
-			'icon_utf8' => decode_utf8('✉'),
+			'icon_char' => decode_utf8('✉'),
 			'text' => Data::Text::Simple->new(
 				'text' => 'volox@volvox.cz',
 			),
 			'url' => 'mailto:volox@volvox.cz',
 		),
 		Data::InfoBox::Item->new(
-			'icon_utf8' => decode_utf8('☎'),
+			'icon_char' => decode_utf8('☎'),
 			'text' => Data::Text::Simple->new(
 				'text' => '+420739639506',
 			),

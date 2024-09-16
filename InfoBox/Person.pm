@@ -22,13 +22,13 @@ sub random {
 
 	my @ret = (
 		Data::InfoBox::Item->new(
-			'icon_utf8' => decode_utf8('🧍'),
+			'icon_char' => decode_utf8('🧍'),
 			'text' => Data::Text::Simple->new(
 				'text' => decode_utf8('Michal Josef Špaček'),
 			),
 		),
 		Data::InfoBox::Item->new(
-			'icon_utf8' => decode_utf8('☎'),
+			'icon_char' => decode_utf8('☎'),
 			'text' => Data::Text::Simple->new(
 				'text' => '+420777623160',
 			),
