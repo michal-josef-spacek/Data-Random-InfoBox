@@ -20,7 +20,7 @@ readme_from 'InfoBox.pm';
 recursive_author_tests('xt');
 requires 'Class::Utils' => 0;
 requires 'Data::InfoBox' => 0;
-requires 'Data::InfoBox::Item' => 0;
+requires 'Data::InfoBox::Item' => 0.02;
 requires 'Data::Text::Simple' => 0;
 requires 'Error::Pure' => 0;
 requires 'List::Util' => 0;

@@ -24,7 +24,7 @@ no_index:
 requires:
   Class::Utils: 0
   Data::InfoBox: 0
-  Data::InfoBox::Item: 0
+  Data::InfoBox::Item: 0.02
   Data::Text::Simple: 0
   Error::Pure: 0
   List::Util: 0
