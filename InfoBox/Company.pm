@@ -33,9 +33,9 @@ sub random {
 		Data::InfoBox::Item->new(
 			'icon_char' => decode_utf8('✉'),
 			'text' => Data::Text::Simple->new(
-				'text' => 'volox@volvox.cz',
+				'text' => 'volvox@volvox.cz',
 			),
-			'url' => 'mailto:volox@volvox.cz',
+			'url' => 'mailto:volvox@volvox.cz',
 		),
 		Data::InfoBox::Item->new(
 			'icon_char' => decode_utf8('☎'),
