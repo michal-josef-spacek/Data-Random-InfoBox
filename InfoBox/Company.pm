@@ -3,7 +3,8 @@ package Data::Random::InfoBox::Company;
 use strict;
 use warnings;
 
-use Data::InfoBox::Item;
+use Data::Icon;
+use Data::InfoBox::Item 0.03;
 use Data::Random::InfoBox::Address;
 use Data::Text::Simple;
 use Unicode::UTF8 qw(decode_utf8);
@@ -31,14 +32,18 @@ sub random {
 		),
 		Data::Random::InfoBox::Address->new->random,
 		Data::InfoBox::Item->new(
-			'icon_char' => decode_utf8('✉'),
+			'icon' => Data::Icon->new(
+				'char' => decode_utf8('✉'),
+			),
 			'text' => Data::Text::Simple->new(
 				'text' => 'volvox@volvox.cz',
 			),
 			'url' => 'mailto:volvox@volvox.cz',
 		),
 		Data::InfoBox::Item->new(
-			'icon_char' => decode_utf8('☎'),
+			'icon' => Data::Icon->new(
+				'char' => decode_utf8('☎'),
+			),
 			'text' => Data::Text::Simple->new(
 				'text' => '+420739639506',
 			),

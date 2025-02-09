@@ -23,8 +23,9 @@ no_index:
     - xt
 requires:
   Class::Utils: 0
+  Data::Icon: 0
   Data::InfoBox: 0
-  Data::InfoBox::Item: 0.02
+  Data::InfoBox::Item: 0.03
   Data::Text::Simple: 0
   Error::Pure: 0
   List::Util: 0

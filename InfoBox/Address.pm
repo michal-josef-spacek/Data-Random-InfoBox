@@ -3,7 +3,8 @@ package Data::Random::InfoBox::Address;
 use strict;
 use warnings;
 
-use Data::InfoBox::Item;
+use Data::Icon;
+use Data::InfoBox::Item 0.03;
 use Data::Text::Simple;
 use Unicode::UTF8 qw(decode_utf8);
 
@@ -24,7 +25,9 @@ sub random {
 	my @ret = (
 		# https://vdp.cuzk.cz/vdp/ruian/adresnimista/22350799
 		Data::InfoBox::Item->new(
-			'icon_char' => decode_utf8('🏠'),
+			'icon' => Data::Icon->new(
+				'char' => decode_utf8('🏠'),
+			),
 			'text' => Data::Text::Simple->new(
 				'text' => decode_utf8('Prvního pluku 211/5'),
 			),
