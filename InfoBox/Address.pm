@@ -3,6 +3,7 @@ package Data::Random::InfoBox::Address;
 use strict;
 use warnings;
 
+use Class::Utils qw(set_params);
 use Data::Icon;
 use Data::InfoBox::Item 0.03;
 use Data::Text::Simple;
@@ -15,6 +16,9 @@ sub new {
 
 	# Create object.
 	my $self = bless {}, $class;
+
+	# Process parameters.
+	set_params($self, @params);
 
 	return $self;
 }
