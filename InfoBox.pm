@@ -47,7 +47,7 @@ sub random {
 		$ret = Test::Shared::Fixture::Data::InfoBox::Address->new;
 	} elsif ($self->{'type'} eq 'company') {
 		$ret = Test::Shared::Fixture::Data::InfoBox::Company->new;
-	} elsif ($self->{'type'} eq 'person') {
+	} else {
 		$ret = Test::Shared::Fixture::Data::InfoBox::Person->new;
 	}
 
