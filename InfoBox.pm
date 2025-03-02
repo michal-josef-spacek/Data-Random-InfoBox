@@ -4,10 +4,9 @@ use strict;
 use warnings;
 
 use Class::Utils qw(set_params);
-use Data::InfoBox;
-use Data::Random::InfoBox::Address;
-use Data::Random::InfoBox::Company;
-use Data::Random::InfoBox::Person;
+use Test::Shared::Fixture::Data::InfoBox::Address 0.06;
+use Test::Shared::Fixture::Data::InfoBox::Company 0.06;
+use Test::Shared::Fixture::Data::InfoBox::Person 0.06;
 use Error::Pure qw(err);
 use List::Util qw(none);
 use Mo::utils qw(check_required);
@@ -43,17 +42,14 @@ sub new {
 sub random {
 	my $self = shift;
 
-	my @items;
+	my $ret;
 	if ($self->{'type'} eq 'address') {
-		@items = Data::Random::InfoBox::Address->new->random;
+		$ret = Test::Shared::Fixture::Data::InfoBox::Address->new;
 	} elsif ($self->{'type'} eq 'company') {
-		@items = Data::Random::InfoBox::Company->new->random;
+		$ret = Test::Shared::Fixture::Data::InfoBox::Company->new;
 	} elsif ($self->{'type'} eq 'person') {
-		@items = Data::Random::InfoBox::Person->new->random;
+		$ret = Test::Shared::Fixture::Data::InfoBox::Person->new;
 	}
-	my $ret = Data::InfoBox->new(
-		'items' => \@items,
-	);
 
 	return $ret;
 }

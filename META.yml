@@ -33,6 +33,9 @@ requires:
   List::Util: 0
   Mo::utils: 0
   Readonly: 0
+  Test::Shared::Fixture::Data::InfoBox::Address: 0.06
+  Test::Shared::Fixture::Data::InfoBox::Company: 0.06
+  Test::Shared::Fixture::Data::InfoBox::Person: 0.06
   Unicode::UTF8: 0
   perl: 5.8.0
 resources:
