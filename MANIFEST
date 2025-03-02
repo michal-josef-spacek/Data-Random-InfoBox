@@ -20,5 +20,6 @@ README
 t/Data-Random-InfoBox/01-use.t
 t/Data-Random-InfoBox/02-version.t
 t/Data-Random-InfoBox/03-new.t
+t/Data-Random-InfoBox/04-random.t
 xt/Data-Random-InfoBox/01-pod_coverage.t
 xt/Data-Random-InfoBox/02-pod.t
