@@ -10,6 +10,7 @@ use Data::Random::InfoBox::Company;
 use Data::Random::InfoBox::Person;
 use Error::Pure qw(err);
 use List::Util qw(none);
+use Mo::utils qw(check_required);
 use Readonly;
 
 Readonly::Array our @TYPES => qw(address company person);
@@ -28,9 +29,7 @@ sub new {
 	# Process parameters.
 	set_params($self, @params);
 
-	if (! defined $self->{'type'}) {
-		err "Parameter 'type' is required.";
-	}
+	check_required($self, 'type');
 	if (none { $self->{'type'} eq $_ } @TYPES) {
 		err "Parameter 'type' has bad value.",
 			'Value', $self->{'type'},

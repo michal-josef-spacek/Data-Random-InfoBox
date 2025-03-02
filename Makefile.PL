@@ -25,6 +25,7 @@ requires 'Data::InfoBox::Item' => 0.03;
 requires 'Data::Text::Simple' => 0;
 requires 'Error::Pure' => 0;
 requires 'List::Util' => 0;
+requires 'Mo::utils' => 0;
 requires 'Readonly' => 0;
 requires 'Unicode::UTF8' => 0;
 resources 'bugtracker' => 'https://github.com/michal-josef-spacek/Data-Random-InfoBox/issues';
